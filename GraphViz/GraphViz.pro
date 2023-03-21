@@ -2,7 +2,7 @@ QT += widgets
 
 # Make sure we do not accidentally #include files placed in 'res'
 CONFIG += no_include_pwd
-CONFIG += c++1z console
+CONFIG += c++17 console
 CONFIG -= app_bundle
 
 SOURCES += $$PWD/src/*.cpp
@@ -10,7 +10,7 @@ SOURCES += $$PWD/src/*.h
 HEADERS += $$PWD/src/*.h
 
 # set up flags for the compiler and Stanford C++ libraries
-QMAKE_CXXFLAGS += -std=c++1z \
+QMAKE_CXXFLAGS += -std=c++17 \
     -Wall \
     -Wextra \
     -Wreturn-type \
